@@ -1,0 +1,35 @@
+categories:
+  - title: '⚠️ Breaking changes'
+    label: 'BREAKING CHANGES'
+
+  - title: '🚀 Features'
+    labels:
+      - 'feature'
+      - 'enhancement'
+      - 'Improvement'
+
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+      - 'Defect'
+
+  - title: '🧰 Maintenance'
+    labels:
+      - 'chore'
+      - 'Refactoring'
+      - 'Infrastructure'
+
+  - title: '📚 Documentation'
+    label: 'documentation'
+
+  - title: '🧪 Tests'
+    label: 'tests'
+
+  - title: '🏎 Optimizations'
+    label: 'optimizations'
+
+change-template: '- $TITLE #$NUMBER (@$AUTHOR)'
+template: |
+  $CHANGES

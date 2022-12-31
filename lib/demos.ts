@@ -9,7 +9,7 @@ export const demos: { name: string; items: Item[] }[] = [
     name: 'Layouts',
     items: [
       {
-        name: 'Nested Layouts',
+        name: 'Nested Layouts for Nextjs',
         slug: 'layouts',
         description: 'Create UI that is shared across routes'
       },

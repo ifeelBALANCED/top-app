@@ -3,7 +3,7 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
 
-export function AddressBar() {
+export const AddressBar = () => {
   const pathname = usePathname()
 
   return (
