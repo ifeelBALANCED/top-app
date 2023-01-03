@@ -5,7 +5,7 @@ const runtimeCaching = require('next-pwa/cache')
 const pwa = withPWA({
   pwa: {
     dest: 'public',
-    runtimeCaching,
+    runtimeCaching
   }
 })
 const nextConfig = {
@@ -19,6 +19,9 @@ const nextConfig = {
     jsconfigPaths: true, // enables it for both jsconfig.json and tsconfig.json
     outputStandalone: true,
     allowMiddlewareResponseBody: true
+  },
+  images: {
+    domains: ['icons8.com']
   }
 }
 
