@@ -51,4 +51,4 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm i -g pnpm@latest && pnpm install --frozen-lockfile --prefer-offline && pnpm run build
+      - run: npm i -g pnpm@latest && pnpm install --frozen-lockfile --prefer-offline && docker build -t top-app:latest .
