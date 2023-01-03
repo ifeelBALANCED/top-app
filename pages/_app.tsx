@@ -1,3 +1,13 @@
+// imports
 import type { AppProps } from 'next/app'
-const MyApp = ({ Component, pageProps }: AppProps) => <Component {...pageProps} />
-export default MyApp
+import { WindowWrapper } from '#/app/containers'
+import { Spinner } from '#/shared'
+
+const Application = ({ Component, pageProps }: AppProps) => {
+  return (
+    <WindowWrapper fallback={<Spinner />}>
+      <Component {...pageProps} />
+    </WindowWrapper>
+  )
+}
+export default Application
