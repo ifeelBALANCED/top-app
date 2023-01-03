@@ -1,5 +1,5 @@
 {
-  "name": "next-tailwind-template",
+  "name": "top-app",
   "private": true,
   "engines": {
     "node": ">=10",
@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "build-stats": "cross-env ANALYZE=true pnpm run build",
-    "docker:build": "docker build -t platform:latest . && docker run -p 3000:3000 platform:latest",
+    "docker:build": "docker build -t top-app:latest . && docker run --rm -it -p 3000:3000 --name top-app top-app:latest",
     "export": "next export",
     "clean": "rimraf node_modules .next out",
     "lint": "eslint --fix \"./**/**/*.{js,jsx,ts,tsx}\"",
